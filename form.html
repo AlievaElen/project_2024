@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ваш Выбор</title>
+        <link rel="stylesheet" href="./form.css">
+        <link rel="stylesheet" href="./css/bootstrap-5.3.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/bootstrap-5.3.0-dist/js/bootstrap.min.js">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <!-- <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+        <!-- <script src="./form.js"></script> -->
+        <script src="./server.js"></script>
+    </head>
+<body>
+        <header class="header">
+            <div class="header__top"></div>
+            <div class="header__frame">
+                <div class="header__mylogo"><a href="./index.html"><img src="./foto/logo.png" alt=""></a></div>
+                <div class="header__mymenu">
+                    <ul class="header__spisok">
+                        <li class="spisok__li"><a href="./index.html">Главная</a></li>
+                        <li class="spisok__li"><a href="./map.html">Карта</a></li>
+                        <li class="spisok__li"><a href="./us.html">О проекте</a> </li>
+                    </ul>
+                </div>
+                <div class="header__mycontact"><a href="./form.html"><button class="myheader__bytton">Добавить недвижимость</button></a> </div>
+            </div>
+        </header>
+        <div class="my__main">
+<div class="main__div1" style="width: 650px;">
+                <h1>Хотите добавить Вашу недвижимость в наш каталог?</h1>
+                <h5>Заполните данную анкету и нажмите "Отправить" и Ваша недвижимость обязательно появится в каталоге!</h5>
+            </div>
+            <div class="myform">
+                <form action="">
+                    <input class="col-12 mb-2 border-#939878" type="text" id="name" placeholder="Укажите Ваше имя">
+                    <input class="col-12 mb-2" type="email" id="email" placeholder="Введите Вашу почту">
+                    <input class=" mb-2" name="" id="message"  placeholder="Добавьте данные об недвижимости: адрес, цену, квадратные метры, аренда/продажа, этаж (если это квартира), номер телефона для связи" rows="10"></input>
+                    <input  type="file" name="" id="foto" placeholder="Добавьте фотографии недвижимости"input type="file" id="photo" name="photo" accept="image/*">
+                    <button type="submit" id="submitBtn" class="btn btn-primary mb-2" ">Отправить</button>
+                </form>
+            </div>
+        </div>
+            
+        
+    <footer>
+        <div class="footer__mylogo"><a href="./index.html"><img src="./foto/logo (1).png" alt=""></a></div>
+        <div class="footer__mymenu">
+            <ul class="footer__spisok">
+                <li class="spisok__li"><a href="./index.html">Главная</a></li>
+                <li class="spisok__li"><a href="./map.html">Карта</a></li>
+                <li class="spisok__li"><a href="./us.html">О проекте</a> </li>
+            </ul>
+        </div>
+        <div class="footer__icons">
+            <a href="https://www.google.ru/"><img src="./foto/icons8-google-48.png" alt=""></a>
+            <a href="https://web.telegram.org/k/"><img src="./foto/icons8-telegram-50.png" alt=""></a>
+            <a href="https://vk.com/"><img src="./foto/icons8-vk-50.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
