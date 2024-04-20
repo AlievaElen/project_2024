@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ваш Выбор</title>
+    <link rel="stylesheet" href="./cards.css" />
+    <link
+      rel="stylesheet"
+      href="/css/bootstrap-5.3.0-dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      #hcg-slider-1 .hcg-slide-container {
+        width: 450px;
+        height: 450px;
+      }
+      .hcg-slider {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .hcg-slide-container {
+        max-width: 100%;
+        display: inline-block;
+        position: relative;
+      }
+      .hcg-slides {
+        display: none;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+      }
+      .hcg-slides img {
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-block;
+      }
+      .hcg-slide-text {
+        color: #ffffff;
+        font-size: 14px;
+        padding: 3px 5px;
+        position: absolute;
+        bottom: 0;
+        border-radius: 5px;
+        left: 50%;
+        text-align: center;
+        text-shadow: 0 0 2px #000;
+        background-color: rgba(255, 255, 255, 0.3);
+        display: inline-block;
+        transform: translate(-50%, -5px);
+      }
+      #hcg-slide-prev,
+      #hcg-slide-next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        text-decoration: none;
+        text-shadow: 1px 1px 5px #686868;
+      }
+      #hcg-slide-next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      #hcg-slide-prev {
+        left: 0;
+        border-radius: 0 3px 3px 0;
+      }
+      #hcg-slide-prev:hover,
+      #hcg-slide-next:hover {
+        background-color: #000c;
+      }
+      .hcg-slide-dot-control {
+        margin-top: 10px;
+        text-align: center;
+      }
+      .hcg-slide-dot {
+        cursor: pointer;
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .hcg-slide-dot.dot-active {
+        background-color: #717171;
+      }
+      .hcg-slide-number {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 4px 7px;
+        position: absolute;
+        border-radius: 5px;
+        top: 5px;
+        left: 5px;
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+      /************CSS Animation***********/
+
+      .animated {
+        animation-name: fadeIn;
+        animation-duration: 1s;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .fadeIn {
+        animation-name: fadeIn;
+      }
+    </style>
+    <header class="header">
+      <div class="header__top"></div>
+      <div class="header__frame">
+        <div class="header__mylogo">
+          <a href="/index.html"><img src="/foto/logo.png" alt="" /></a>
+        </div>
+        <div class="header__mymenu">
+          <ul class="header__spisok">
+            <li class="spisok__li"><a href="/index.html">Главная</a></li>
+            <li class="spisok__li"><a href="/map.html">Карта</a></li>
+            <li class="spisok__li"><a href="/us.html">О проекте</a></li>
+          </ul>
+        </div>
+        <div class="header__mycontact">
+          <a href="/form.html"
+            ><button class="myheader__bytton">Добавить недвижимость</button></a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="mycard__container">
+      <div id="hcg-slider-1" class="hcg-slider">
+        <div class="hcg-slide-container">
+          <div class="hcg-slider-body">
+            <a class="hcg-slides animated" style="display: flex">
+              <span class="hcg-slide-number">1/5</span>
+              <img
+                src="https://html-generator.com/uploads/images/2024/04/17/69332V04IZEF8ZL.png"
+                alt="69332V04IZEF8ZL.png"
+              />
+              <span class="hcg-slide-text"></span>
+            </a>
+          </div>
+          <a href="#" id="hcg-slide-prev">❮</a>
+          <a href="#" id="hcg-slide-next">❯</a>
+        </div>
+        <div class="hcg-slide-dot-control"></div>
+      </div>
+
+      <div class="mycard__information">
+        <h1>2-xкомнатная квартира</h1>
+        <br />
+        <div>
+          <p class="one">Адрес:</p>
+          <p class="two">
+            Выборг, микрорайон Центральный, квартал Папула, жилой комплекс Малая
+            Финляндия. Корпус 6. ж/д ст. Выборг, 0,50 км
+          </p>
+        </div>
+        <div>
+          <p class="one">Площадь (общая/жилая):</p>
+          <p class="two">65,8 м²/ 31,1 м²</p>
+        </div>
+        <div>
+          <p class="one">Этаж:</p>
+          <p class="two">4/9</p>
+        </div>
+        <div>
+          <p class="one">Статус:</p>
+          <p class="two">в продаже</p>
+        </div>
+        <div>
+          <p class="one">Цена:</p>
+          <p class="two">10 889 000 ₽</p>
+        </div>
+        <div>
+          <p class="one">Контакты:</p>
+          <p class="two">+7 (929) 129-26-31</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__mylogo">
+        <a href="/index.html"><img src="/foto/logo (1).png" alt="" /></a>
+      </div>
+      <div class="footer__mymenu">
+        <ul class="footer__spisok">
+          <li class="spisok__li"><a href="/index.html">Главная</a></li>
+          <li class="spisok__li"><a href="/map.html">Карта</a></li>
+          <li class="spisok__li"><a href="/us.html">О проекте</a></li>
+        </ul>
+      </div>
+      <div class="footer__icons">
+        <a href="https://www.google.ru/"
+          ><img src="/foto/icons8-google-48.png" alt=""
+        /></a>
+        <a href="https://web.telegram.org/k/"
+          ><img src="/foto/icons8-telegram-50.png" alt=""
+        /></a>
+        <a href="https://vk.com/"
+          ><img src="/foto/icons8-vk-50.png" alt=""
+        /></a>
+      </div>
+      z
+    </footer>
+    <script>
+      (() => {
+        //If you want to add more images, add the link name and URL image URL in the array list below.
+        const images_list = [
+          {
+            "url":
+              "https://html-generator.com/uploads/images/2024/04/17/69332V04IZEF8ZL.png",
+            "alt": "",
+            "name": "69332V04IZEF8ZL.png",
+            "link": "",
+          },
+          {
+            "url":
+              "https://html-generator.com/uploads/images/2024/04/17/59244EMDQNFCE6_.jpeg",
+            "alt": "",
+            "name": "59244EMDQNFCE6_.jpeg",
+            "link": "",
+          },
+          {
+            "url":
+              "https://html-generator.com/uploads/images/2024/04/17/92208H9W4L4HBX4.jpeg",
+            "alt": "",
+            "name": "92208H9W4L4HBX4.jpeg",
+            "link": "",
+          },
+          {
+            "url":
+              "https://html-generator.com/uploads/images/2024/04/17/92972LK3_9TFU21.jpeg",
+            "alt": "",
+            "name": "92972LK3_9TFU21.jpeg",
+            "link": "",
+          },
+          {
+            "url":
+              "https://html-generator.com/uploads/images/2024/04/17/93890R38Z_P73ES.jpeg",
+            "alt": "",
+            "name": "93890R38Z_P73ES.jpeg",
+            "link": "",
+          },
+          {
+            "url":
+              "https://html-generator.com/uploads/images/2024/04/17/94779NV3BQSL40J.jpeg",
+            "alt": "",
+            "name": "94779NV3BQSL40J.jpeg",
+            "link": "",
+          },
+          {
+            "url":
+              "https://html-generator.com/uploads/images/2024/04/17/953117ZGLB46V__.jpeg",
+            "alt": "",
+            "name": "953117ZGLB46V__.jpeg",
+            "link": "",
+          },
+          {
+            "url":
+              "https://html-generator.com/uploads/images/2024/04/17/95626UU9HOCCWVB.jpeg",
+            "alt": "",
+            "name": "95626UU9HOCCWVB.jpeg",
+            "link": "",
+          },
+          {
+            "url":
+              "https://html-generator.com/uploads/images/2024/04/17/95954OXCQ2Y648R.jpeg",
+            "alt": "",
+            "name": "95954OXCQ2Y648R.jpeg",
+            "link": "",
+          },
+          {
+            "url":
+              "https://html-generator.com/uploads/images/2024/04/17/96466IGJML_0EWR.jpeg",
+            "alt": "",
+            "name": "96466IGJML_0EWR.jpeg",
+            "link": "",
+          },
+          {
+            "url":
+              "https://html-generator.com/uploads/images/2024/04/17/53110X62XYQIU0Z.jpeg",
+            "alt": "",
+            "name": "53110X62XYQIU0Z.jpeg",
+            "link": "",
+          },
+          {
+            "url":
+              "https://html-generator.com/uploads/images/2024/04/17/539316BWQ7ER_WP.jpeg",
+            "alt": "",
+            "name": "539316BWQ7ER_WP.jpeg",
+            "link": "",
+          },
+          {
+            "url":
+              "https://html-generator.com/uploads/images/2024/04/17/54280DMJSL2WU4F.jpg",
+            "alt": "",
+            "name": "54280DMJSL2WU4F.jpg",
+            "link": "",
+          },
+        ];
+
+        // generated by https://www.html-code-generator.com/html/image-slideshow-generator
+        let slider_id = document.querySelector("#hcg-slider-1");
+
+        // append all images
+        let dots_div = "";
+        let images_div = "";
+        for (let i = 0; i < images_list.length; i++) {
+          // if no link without href="" tag
+          let href =
+            images_list[i].link == ""
+              ? ""
+              : ' href="' + images_list[i].link + '"';
+          images_div +=
+            "<a" +
+            href +
+            ' class="hcg-slides animated"' +
+            (i === 0 ? ' style="display:flex"' : "") +
+            ">" +
+            '<span class="hcg-slide-number">' +
+            (i + 1) +
+            "/" +
+            images_list.length +
+            "</span>" +
+            '<img src="' +
+            images_list[i].url +
+            '" alt="' +
+            images_list[i].name +
+            '">' +
+            '<span class="hcg-slide-text">' +
+            images_list[i].name +
+            "</span>" +
+            "</a>";
+          dots_div +=
+            '<a href="#" class="hcg-slide-dot' +
+            (i === 0 ? " dot-active" : "") +
+            '" data-id="' +
+            i +
+            '"></a>';
+        }
+        slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+        slider_id.querySelector(".hcg-slide-dot-control").innerHTML = dots_div;
+
+        let slide_index = 0;
+
+        const images = slider_id.querySelectorAll(".hcg-slides");
+        const dots = slider_id.querySelectorAll(".hcg-slide-dot");
+        const prev_button = slider_id.querySelector("#hcg-slide-prev");
+        const next_button = slider_id.querySelector("#hcg-slide-next");
+
+        const showSlides = () => {
+          if (slide_index > images.length - 1) {
+            slide_index = 0;
+          }
+          if (slide_index < 0) {
+            slide_index = images.length - 1;
+          }
+          for (let i = 0; i < images.length; i++) {
+            images[i].style.display = "none";
+            dots[i].classList.remove("dot-active");
+            if (i == slide_index) {
+              images[i].style.display = "flex";
+              dots[i].classList.add("dot-active");
+            }
+          }
+        };
+
+        prev_button.addEventListener(
+          "click",
+          (event) => {
+            event.preventDefault();
+            slide_index--;
+            showSlides();
+          },
+          false
+        );
+
+        next_button.addEventListener(
+          "click",
+          (event) => {
+            event.preventDefault();
+            slide_index++;
+            showSlides();
+          },
+          false
+        );
+
+        const dot_click = (event) => {
+          event.preventDefault();
+          slide_index = event.target.dataset.id;
+          showSlides();
+        };
+
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].addEventListener("click", dot_click, false);
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -59,34 +59,48 @@ header a:hover{
     font-family: 'Roboto', sans-serif;
 
 }
-
-.my__main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.main__div1{  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+h1{
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 50%;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    width: 40%;
+    text-align: center;
 }
 
-form{
+.myform__container{
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-   
-    }
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+.myform__container a{
+    font-weight: 700;
+    text-decoration: none;
+    color: #939878;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+.myform__container a:hover{
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px #000;
+}
+.myformc__form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.myformc__form img{
+    width: 30%;
+    margin-top: 3%;
 
-input{ 
-    width: 500px;
-    height: 40px;
-    margin-bottom: 5px;
-    text-align: center;
 }
 
 footer{
