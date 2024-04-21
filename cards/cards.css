@@ -189,7 +189,7 @@ footer a:hover {
 .fadeIn {
   animation-name: fadeIn;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 950px) {
   .header__mymenu {
     display: none;
   }
@@ -257,5 +257,9 @@ footer a:hover {
   }
   .footer__icons img {
     width: 70%;
+  }
+  #hcg-slider-1 .hcg-slide-container {
+    width: 90%;
+    height: 90%;
   }
 }
