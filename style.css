@@ -112,7 +112,6 @@ option {
   border-radius: 10px;
 }
 .main__catalog {
-  width: 100%;
   background-color: #f5f5f2;
   padding-top: 4%;
   padding-bottom: 4%;
@@ -124,8 +123,6 @@ option {
 }
 
 .card {
-  width: 25%;
-  height: 48%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,4 +183,92 @@ footer a:hover {
 }
 .main__catalog a:hover {
   color: #939878;
+}
+
+@media screen and (max-width: 720px) {
+  .header__mymenu {
+    display: none;
+  }
+
+  .myheader__bytton {
+    background-color: #939878;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+  }
+  .myheader__bytton {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: small;
+  }
+  header {
+    margin-bottom: 3%;
+  }
+  .main__mycontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container__img {
+    display: none;
+  }
+
+  .container__form {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    width: 550px;
+    margin-left: 10%;
+    margin-right: 2%;
+  }
+  .form__p1 {
+    width: 200px;
+    background-color: #e7e8e3;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  .form__h1 {
+    width: 80%;
+  }
+  h3 {
+    font-family: "Roboto", sans-serif;
+  }
+  .search-container {
+    position: relative;
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .footer__mylogo {
+    display: none;
+  }
+
+  .footer__mymenu {
+    width: 30%;
+    margin-top: 2%;
+  }
+  .footer__spisok {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .spisok__li {
+    padding: 0%;
+    text-align: left;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__icons img {
+    width: 70%;
+  }
 }

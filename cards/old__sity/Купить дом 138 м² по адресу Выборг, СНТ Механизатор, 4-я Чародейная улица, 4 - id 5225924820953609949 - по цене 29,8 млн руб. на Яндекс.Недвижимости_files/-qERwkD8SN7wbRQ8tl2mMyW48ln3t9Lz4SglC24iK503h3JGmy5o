@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'YS Display Cond';
+    src: url('https://yastatic.net/s3/distribution/lpc/fonts/YS%20Display%20Cond/YS%20Display%20Cond-Heavy.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Text';
+    src: url('https://yastatic.net/s3/home/fonts/ys/1/text-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    width: 300px;
+    height: 672px;
+    background: url(//avatars.mds.yandex.net/get-adfox-content/2765366/240415_adfox_2643892_8615405_images_img.png/optimize.webp), url(//realty.ya.ru/_crpd/30BS4n319/f0ead5WXMS3/-qERwkD8SN7wbRQ8tl2mMyW48ln3t9Lz4SglC24iK503h3JGmy5oY_OLlxkzEgTPrQH6ON64kwUnaCWnjceL_HWo2UyPq0nfsuvUfLSYpmM14yidoWjaOKFvKpP5vDoKZVLlVos3vXVknsZCuluBDO5GYPydoh6Iba6o7YQNwn9zL5wLiGoCnr0t0C10XHkhMqlkQaYm0X6hZqkU-7O_SmncJpHI-b_-K95GwfUbTMovDCB-G2abxqzl4yIGDcIz_akbDIGigZL77lAluNTwYbGpLofpLp--pqurmrg6dkPomCtVj711tC4VxATxHE1Opges-lMhlIgqZS7lx0JFv3zjGszIrQDXd6qUJPqSc6G1JaOP4epQMOMm4R439ncDoxDiFMg-fPJqGQuIMBEOA2iBKrIe6tHK76Mpps-Fzv20Y57LCaMBUzXvVmF-E3RlsqfvwGGo0PYlbu6Rt3p8T-DTalfDdf73bJOJgr_QTExvjqK13CPSiqWlLyMHTMI_PKHYRc2sjZdxZRtqeVNz5v1hYQEjYlk2ayVi2D5zvktkG2ecj_M0e-rWR0J8UAhKII8oshJq2klgJWhjR0WIvrXpXc0E7YKaeq3TY3jSMC4-puSDKWZSeavg6Ny5-ryPrFenEMj2tL2nUYkCOBPHiqVMo_XcK5bGqmRua0HNBHP1L5vEwWzCn3hq1KR7G_2jPqwqC6nplrtl42NcuLXzQu-aJpFNeP99bddKxnBYgItuw2OzGeETiiKvYG0BRsczd2bbRMxpy9z_aFLkO5o0rXrmbcTuadu4oegmkbM0ekTqkOYYDPWxvmTRD4D4EAKPJUXteh0nHUUlYqZuzMfOP3TolIWMbMBWuGOZIvbde2Xy56ZDoODeeWBuaNt5NfOIaxtqGMl4dHIom4jIMh_BTqTBbLwfKh8KpGlrbobKzHu7KdRITeUJE3Nunqo7WrGtei6vjiFnH_Tm6WBVM7n4gGnV5RdJfvX3pVQPj3JQAchmQKX0EytXReJlqG4JB8d6_S4dz8UiRVL0pVGrMhXwobAupMEs7Jr77e3vE7PxswUgWm5fh7_xfOueSUc6GAZOosDndh1ql4VnJG7shwqMurxmHIPMYcDV_G5RbX-SNiw9rSXBbGlbuOPhphm5PzMMoFOjEMc5vzSs20fDupRFB-JMIn4XoZQL5e8o60aPRPU7pJEGBi0NnrIq0CxwVfnq9SVrRSjv3PyiYSJaez3zSqMVYt-F_j027lLHTnzaxUfmDKj1FiNRi68io2cGRkc7f6fUyoZqCpozrpPntFA2JDNg5kAo7py5qGGmW3E7_MtgFaPWTvE2u-fSzAi8FUFN4Y2ksZQtWw1j5akuDcGJPzAuHMtHr4GVd6ZZJD4SNWz97G2EYymaMKxpK1DyP_DIK52smAF7f7qrk8IHP1PGh6hH5DmdohIAZ-tsZwiHSja6ptWPye5AVnOkF-GwGL8utS3tQ6TtXnRu7qGSfj8-CaOZrl3H_3pyIJqKibIYTMcpBOu5m26awC9pZOlFxMJ1MG7bxMclQBWwpZ-t9hu4JLKgo8Dk6Zb5LujnkPh29skjF6BXy3619O9XwEv5FYQKr8tjdFxgEgxqpKQtgI-B9TFiUU9GZM6Xc6eRajgQseL1YOzFIOnU8S2gbZ4_d_bJK5LuWcQxObOjEQaCfZqPh-9Dr7qcodsAa6wubc-Ejrz55NDLjuUJ23GmX6Tw3HyrdWLtyW8kXveiLmBcNnN8QWKR5x8MM3Z8ItsKyLwTxQ4pRmuxn-uehKvkaenLCoJ2uGbdBQ8vBNY4otmu8dHzo7sg5wzubxL2Kyho27Fy_UgqWy1Wxz9-9OueQ8K7UIhE6gejvNRhWYWlIe6mgIuJerViWYMG5ovUuipQ6rRT82d07isEoyyc8Kpp5xg69jwIbdWnW835drijUQAOtZGJgqyHKLjV6ZHC7mppYo0Fgr94b9VHSOrFV72jHiw8UrDq-y_txilgmfJhYyIdOjV1jOSZ69EGeDF3rZnOQXxTSARkxiMxkWebQ-Lp4ynJw0J7uiPexwHpxt09LRJtedwxITnmKsaqaZI3JiWqGbD9vkelFSvXjfW_eyxSSoN9l8mEbYhteRFiG4YkammpzMZHu7tiXQ8JogkauCyY4XtZsGTx7GbFY68bcSUqqNqxebQCL9XnnAWzuLxiXkTH9ZABQmdMaLZcKZKEbeOuYkFMRr9yp9DPhK6I2vwlmqI-mnjkOuWvD2bg13KlIqKUf_J1gaFbbFWEeTdz5Z6LQLRcRcMlQWlyU6kVhGrqp-YHRAl7tCTYAMGkwts_ZNYpMNE-K_6sI08m6Vf56qjhVLP6NEmrmmtZif8yfucWQUD7nQGILIAqdV0oUcQjqq_nQ4zFdfMoG0OEbwwXcyjTbb6etOk-72lO6a6aOCztYVRxM3xAZxcrWQx19TKqHMuG_ZkJx6TLIP0Z7t1I6-XjKkuORbQ_q5NLzG3LE3CoXG53FP9ks-VmjKiqEvPsL6tYeDq4C2TQ5NAGcDF9rt_DAD8Vx0jmQei81SnbwO2tZ2qIi876_eMdBk8szh9wa5ZiN5O_qvVmJYkr75t76aLrmTtyeg3lXaBYx7nytmvUjwY7lM2LaAeovZwjkklnpiHrxk-CPfqh1AMI4wKWeu2Z5v-Uu-zxJuMGaC3bO6wrb5NzPvYKb9Njnwf-OfimH86G9NGJx6oNYP5cLhPLaOFproyLgP_zJpaGReyAFvJqEGTwELbsNifmAOymUjcjqWoVu353T-2T7BbM8T815NKKDLWUDgPpC6U4k-PWgWYhpqsOAkB99yJRRkRpjV19L5mnslA2pvmn58-h5xoxreEgHDs7PEIrkO4UyfNxdCZdhw693YgEZgWgtlxiVIumaqhqSE-GNfLhmwOGocQaPCiX4XiZOO7z4qSG6KZZcWaoLpo0u3MKJZziVcNw_31j3wtJ8F1AByAML_5dYdOMLc);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 300px, 300px;
+}
+
+.container {
+    padding: 0 16px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.logo {
+    width: 77px;
+    margin: 256px 0 32px;
+}
+
+h1 {
+    font-family: YS Display Cond;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+p {
+    font-family: YS Text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.92);
+}
+
+.btn {
+    font-family: YS Text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 48px;
+    color: rgba(0, 0, 0, 0.92);
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 268px;
+    height: 48px;
+    margin: auto 0 38px;
+    text-align: center;
+}
