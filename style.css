@@ -251,7 +251,7 @@ footer a:hover {
   }
 
   .footer__mymenu {
-    width: 30%;
+    width: 40%;
     margin-top: 2%;
   }
   .footer__spisok {
@@ -267,6 +267,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 0%;
   }
   .footer__icons img {
     width: 70%;
